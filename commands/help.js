@@ -7,16 +7,16 @@ exports.run = function(client, message) {
   .setColor('RANDOM')
   .addField('Music Bot | Müzik Komutları',`
 
-  **+play <müzikismi>**: İstenilen şarkıyı çalar.
-  **+pause**: Şarkıyı durdurur.
-  **+resume**: Durdurulan şarkıyı devam ettirir.
-  **+loop**: Şarkıyı tekrardan oynatır.
-  **+skip**: Varsa listedeki diğer şarkılara geçer.
-  **+stop**: Şarkıyı durdurur. 
-  **+np**: Çalan şarkıyı gösterir.
-  **+list**: Şarkıları gösterir.
-  **+mix**: Şarkıları karıştırır.
-  **+ping**: Botun gecikme süresini gösterir.
+  **${config.prefix}play <müzikismi>**: İstenilen şarkıyı çalar.
+  **${config.prefix}pause**: Şarkıyı durdurur.
+  **${config.prefix}resume**: Durdurulan şarkıyı devam ettirir.
+  **${config.prefix}loop**: Şarkıyı tekrardan oynatır.
+  **${config.prefix}skip**: Varsa listedeki diğer şarkılara geçer.
+  **${config.prefix}stop**: Şarkıyı durdurur. 
+  **${config.prefix}np**: Çalan şarkıyı gösterir.
+  **${config.prefix}list**: Şarkıları gösterir.
+  **${config.prefix}mix**: Şarkıları karıştırır.
+  **${config.prefix}ping**: Botun gecikme süresini gösterir.
   **Sunucunuza eklemek isterseniz:**[davet linki](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)
        `)
   .setFooter(`${message.author.tag} Tarafından İstendi.`, message.author.avatarURL)
