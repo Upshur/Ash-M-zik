@@ -41,4 +41,4 @@ fs.readdir("./commands/", (err, klanti) => {
 });
 
 
-client.login(process.env.TOKEN || config.token);
+client.login(process.env.TOKEN || config.token).catch(err("botda bir hata var"))

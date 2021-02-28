@@ -7,16 +7,15 @@
     "start": "node klanti.js"
   },
   "dependencies": {
-    "@discordjs/opus": "^0.3.3",
-    "discord-player": "^3.0.3",
     "discord.js": "^12.5.1",
-    "ffmpeg-static": "^4.2.7"
+    "discord-player": "^3.3.2"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "license": "MIT",
   "keywords": [
-    "discord"
+    "discord",
+    "striga"
   ]
 }
