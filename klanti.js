@@ -41,4 +41,4 @@ fs.readdir("./commands/", (err, klanti) => {
 });
 
 
-client.login(process.env.TOKEN || config.token).catch(err("botda bir hata var"))
+client.login(process.env.TOKEN || config.token).then(console.log(`Bot başarıyla giriş yaptı!`)).catch(console.error("Bota giriş yapılırken başarısız olundu tokeni dogru girdigine emin misin ?"));
