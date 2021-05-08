@@ -5,7 +5,7 @@ exports.run = function(client, message) {
  const help = new Discord.MessageEmbed()
   .setAuthor(`${message.client.user.username}`, message.client.user.avatarURL)
   .setColor('RANDOM')
-  .addField('Music Bot | Müzik Komutları',`
+  .addField('Müzik Komutları',`
 
   **${config.prefix}play <müzikismi>**: İstenilen şarkıyı çalar.
   **${config.prefix}pause**: Şarkıyı durdurur.
@@ -17,7 +17,6 @@ exports.run = function(client, message) {
   **${config.prefix}list**: Şarkıları gösterir.
   **${config.prefix}mix**: Şarkıları karıştırır.
   **${config.prefix}ping**: Botun gecikme süresini gösterir.
-  **Sunucunuza eklemek isterseniz:**[davet linki](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)
        `)
   .setFooter(`${message.author.tag} Tarafından İstendi.`, message.author.avatarURL)
   .setThumbnail("https://i.pinimg.com/originals/05/4a/a3/054aa3421c22e0c9e04ada3082066a8d.gif")
