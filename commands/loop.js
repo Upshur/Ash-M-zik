@@ -30,13 +30,13 @@ exports.run = async (client, message) => {
 
     const loop3 = new Discord.MessageEmbed()
     .setColor('RANDOM')
-    .setAuthor(`✔️ - Döngü başarıyla **aktive** edildi!`)
+    .setAuthor(`✔️ - Döngü başarıyla **Devre Dışı** edildi!`)
     .setTimestamp()
     .setFooter(`${config.footer}`)
 
     const loop4 = new Discord.MessageEmbed()
     .setColor('RANDOM')
-    .setAuthor(`✔️ - Döngü başarıyla **devre dışı** edildi!`)
+    .setAuthor(`✔️ - Döngü başarıyla **Aktif** edildi!`)
     .setTimestamp()
     .setFooter(`${config.footer}`)
 
