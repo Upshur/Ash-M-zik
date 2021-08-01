@@ -6,7 +6,7 @@ const log = message => {
 
 module.exports = async client => {
   
-client.user.setActivity(`Azexa ❤️ Destan Team`, {
+client.user.setActivity(`Azexa Was Here..!`, {
 type: "PLAYING",
 url: "https://www.twitch.tv/klanter"})
     log(`[BOT] Aktif, Komutlar Yüklendi.`)
