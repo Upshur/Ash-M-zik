@@ -67,7 +67,16 @@ client.on("guildMemberAdd", member => {
 });
 
 
+///fake katıl ayrıl
 
+client.on('message', async message => {
+  if (message.content === 'a!fake-katıl') { // - yerine prefixi yaz
+    client.emit('guildMemberAdd', message.member || await message.guild.members.fetch(message.author));
+  }
+  if (message.content === 'a!fake-ayrıl') { // - yerine prefixi yaz
+    client.emit('guildMemberRemove', message.member || await message.guild.members.fetch(message.author));
+  }
+});
 
 
 
